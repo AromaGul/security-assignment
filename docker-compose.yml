@@ -1,0 +1,73 @@
+
+services:
+  juiceshop:
+    image: bkimminich/juice-shop:latest
+    container_name: lab-juiceshop
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks:
+      - labnet
+
+  dvwa:
+    image: vulnerables/web-dvwa:latest
+    platform: linux/amd64
+    container_name: lab-dvwa
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8090:80"
+    networks:
+      - labnet
+
+  webgoat:
+    image: webgoat/webgoat:latest
+    container_name: lab-webgoat
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Karachi
+    ports:
+      - "127.0.0.1:8081:8080"
+      - "127.0.0.1:9090:9090"
+    networks:
+      - labnet
+    healthcheck:
+      test:
+        - CMD
+        - wget
+        - -q
+        - -O
+        - /dev/null
+        - http://localhost:8080/WebGoat/login
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+
+  bwapp:
+    image: raesene/bwapp:latest
+    platform: linux/amd64
+    container_name: lab-bwapp
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8082:80"
+    networks:
+      - labnet
+
+  mutillidae:
+    image: citizenstig/nowasp:latest
+    platform: linux/amd64
+    container_name: lab-mutillidae
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8083:80"
+    networks:
+      - labnet
+
+networks:
+  labnet:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "false"
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24
