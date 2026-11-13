@@ -1,0 +1,8 @@
+host,port,protocol,service,version
+127.0.0.1,3000,tcp,ppp,
+127.0.0.1,8081,tcp,http,Apache Tomcat language: en
+127.0.0.1,8082,tcp,http,Apache httpd 2.4.7 (Ubuntu)
+127.0.0.1,8083,tcp,http,Apache httpd 2.4.7 (Ubuntu)
+127.0.0.1,8090,tcp,http,Apache httpd 2.4.25 (Debian)
+127.0.0.1,9090,tcp,http,Apache Tomcat language: en
+127.0.0.1,37171,tcp,http,Golang net/http server
