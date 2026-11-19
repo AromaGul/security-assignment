@@ -23,4 +23,10 @@ bash A2_AromaGul_scan.sh
 - Nmap dependency checking
 - Host availability testing
 - CSV results generation
-# Assignment 2 - Security Testing
+
+## Part D — Attack-surface inventory
+Folder: `part-d/` — OWASP Juice Shop recon (lab instance).
+- `part-d/A2_AromaGul_PartD.pdf` — write-up with pipeline and 45-asset inventory
+- `part-d/A2_AromaGul_PartD_inventory.csv` — inventory in the course CSV template
+- `part-d/A2_AromaGul_recon.sh` — reusable recon pipeline
+- `part-d/evidence/` — raw Kali output

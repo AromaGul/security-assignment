@@ -1,0 +1,1 @@
+http://localhost:3000 [200 OK] HTML5, IP[::1], Script[module], Title[OWASP Juice Shop], UncommonHeaders[access-control-allow-origin,x-content-type-options,feature-policy,x-recruiting], X-Frame-Options[SAMEORIGIN]

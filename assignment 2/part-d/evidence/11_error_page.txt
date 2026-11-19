@@ -1,0 +1,2 @@
+Error: Unexpected path: /rest
+(Express errorhandler HTML page; first text line shown. No "at ..." stack-trace lines found by out/11b check.)

@@ -1,0 +1,49 @@
+# Nmap 7.991 scan initiated Thu Nov 19 06:29:17 2026 as: /usr/lib/nmap/nmap -sV -sC -p 3000 -oN out/02_service_3000.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000065s latency).
+
+PORT     STATE SERVICE VERSION
+3000/tcp open  ppp?
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Access-Control-Allow-Origin: *
+|     X-Content-Type-Options: nosniff
+|     X-Frame-Options: SAMEORIGIN
+|     Feature-Policy: payment 'self'
+|     X-Recruiting: /#/jobs
+|     Accept-Ranges: bytes
+|     Cache-Control: public, max-age=0
+|     Last-Modified: Sun, 08 Nov 2026 19:11:10 GMT
+|     ETag: W/"2700-1a1bc9258b0"
+|     Content-Type: text/html; charset=UTF-8
+|     Content-Length: 9984
+|     Vary: Accept-Encoding
+|     Date: Thu, 19 Nov 2026 11:29:28 GMT
+|     Connection: close
+|     <!--
+|     Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
+|     SPDX-License-Identifier: MIT
+|     <!doctype html>
+|     <html lang="en" data-beasties-container>
+|     <head>
+|     <meta charset="utf-8">
+|     <title>OWASP Juice Shop</title>
+|     <meta name="description" content="Probably the most modern and sophisticated insecure web application">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <link rel="preconnect" href="htt
+|   HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 204 No Content
+|     Access-Control-Allow-Origin: *
+|     Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE
+|     Vary: Access-Control-Request-Headers
+|     Content-Length: 0
+|     Date: Thu, 19 Nov 2026 11:29:28 GMT
+|     Connection: close
+|   Help, NCP: 
+|     HTTP/1.1 400 Bad Request
+|_    Connection: close
+1 service unrecognized despite returning data.
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov 19 06:29:28 2026 -- 1 IP address (1 host up) scanned in 11.37 seconds

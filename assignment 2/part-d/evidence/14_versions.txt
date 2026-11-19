@@ -1,0 +1,4 @@
+{"version":"20.4.0-SNAPSHOT"}
+# HELP nodejs_version_info Node.js version info.
+# TYPE nodejs_version_info gauge
+nodejs_version_info{version="v24.22.2",major="24",minor="22",patch="2",app="juiceshop"} 1
