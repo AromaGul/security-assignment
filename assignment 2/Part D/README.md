@@ -41,3 +41,5 @@ chmod +x A2_AromaGul_recon.sh
 | `14_versions.txt` | App and Node.js version disclosure |
 
 Recon only — nothing was exploited. Risk notes say what to test next and why.
+
+> Note: the Part B scanner is `../Part B/A2_AromaGul_scan.sh`; this folder's `A2_AromaGul_recon.sh` is the separate Part D recon pipeline.
