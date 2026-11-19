@@ -4,7 +4,7 @@
 |---|---|---|
 | A | [`Part A/`](Part%20A/) | TryHackMe and OverTheWire Bandit completion screenshots |
 | B | [`Part B/`](Part%20B/) | Bash CIDR Nmap scanner `A2_AromaGul_scan.sh` and lab scan evidence |
-| C | [`Part C/`](Part%20C/) | _To be added_ |
+| C | [`Part C/`](Part%20C/) | PortSwigger Web Security Academy — access control labs |
 | D | [`Part D/`](Part%20D/) | Attack-surface inventory of OWASP Juice Shop (PDF, CSV, recon pipeline, evidence) |
 
 Submission files: `A2_AromaGul.pdf` and `A2_AromaGul_scan.sh` (Part B).
